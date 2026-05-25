@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ঈদ মোবারক</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #020111 0%, #20124d 100%);
+            color: #f1c40f;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .moon {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: 25px 20px 0 0 #f1c40f;
+            margin-bottom: 40px;
+            animation: float 4s ease-in-out infinite;
+        }
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 0 0 20px #f1c40f, 0 0 30px #e67e22;
+            animation: glow 2s ease-in-out infinite alternate;
+            text-align: center;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #ecf0f1;
+            margin-top: 15px;
+            text-align: center;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-25px); }
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f; }
+            to { text-shadow: 0 0 20px #f1c40f, 0 0 30px #e67e22, 0 0 40px #e67e22; }
+        }
+    </style>
+</head>
+<body>
+    <div class="moon"></div>
+    <h1>ঈদ মোবারক</h1>
+    <p>আপনার ও আপনার পরিবারের জন্য রইল ঈদের অনেক অনেক শুভেচ্ছা!</p>
+</body>
+</html>
